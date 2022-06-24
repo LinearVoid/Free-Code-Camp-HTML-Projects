@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+    <h1 id="title">Pizza Survey Form</h1>
+    <p id="description">This is a survey for Pizza and which you like </p>
+    <form id="survey-form">
+    <fieldset>
+    <label id="name-label"> First Name:
+    <input required id="name" type="text" placeholder="Your Name">
+    </label>
+    <label> Last Name:
+        <input id="name" type="text" placeholder="Your Last Name">
+    </label>
+    <label id="number-label"> How many Pizzas have you eaten:
+        <input id="number" type="number" min="0"max="99" placeholder="1">
+    </label>
+    <label id="email-label"> Email:
+        <input id="email" type="email" placeholder="pizzarocks@gmail.com" required>
+    </label>
+    
+    </fieldset>
+
+    <fieldset>
+        <label>What is your favorite Pizza!
+            <select name="dropdown" id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Cheese</option>
+              <option value="2">Pepperoni</option>
+              <option value="3">Sausage</option>
+              <option value="4">Green Pepper</option>
+              <option value="5">Onion</option>
+              <option value="6">Banana Pepper</option>
+              <option value="7">Pineapple</option>
+              <option value="8">Tomato</option>
+              <option value="9">Other</option>
+            </select>
+          </label>
+          <label id="other-pizza"> If other, enter your favorite:
+            <input id="name" type="text" placeholder="Olive Pizza" required>
+        </label>
+    </fieldset>
+
+    <fieldset id="radios">
+        <label>Stuffed Crust or Deep Dish:</label><br>
+            <label>Stuffed Crust <input type="radio" name="typeo" class="inline" value="Stuffed"></label>
+            <label>Deep Dish Pizza<input type="radio" name="typeo" class="inline" value="Deep Dish"></label>
+        
+    </fieldset>
+
+    <fieldset id="checkbox">
+        <label>Favorite Pizza resturants:</label><br>
+        <label><input type="checkbox" name="typeo" class="inline" value="1"> Papa Johns</label>
+            <label><input type="checkbox" name="typeo" class="inline" value="2"> Pizza Hut</label>
+            <label><input type="checkbox" name="typeo" class="inline" value="3"> Dominos</label>
+            <label><input type="checkbox" name="typeo" class="inline" value="4"> Little Caesars</label>
+            <label><input type="checkbox" name="typeo" class="inline" value="5"> Pizza Hut</label>
+        <textarea placeholder="Any Comments?"></textarea>
+    </fieldset>
+
+    <fieldset>
+    <input type="submit" name="submit" value="Submit" id="submit" >
+    </fieldset>
+    </form>
+    
+<p>By Joshua B</p>
+</body>
+</html>
